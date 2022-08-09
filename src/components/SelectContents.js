@@ -36,6 +36,13 @@ const SelectContents = (props) => {
   ];
   const [topic, setTopic] = useState("");
 
+  const handleReset = () => {
+    setChapter("");
+    setClasse("");
+    setSubject("");
+    setLanguage("");
+    setTopic("");
+  };
   const handleSearch = () => {
     setData({
       language,
@@ -100,6 +107,7 @@ const SelectContents = (props) => {
           <SelectInput
             options={Subjects}
             title={"Subject"}
+            value={subject}
             onChange={(e) => setSubject(e.target.value)}
           />
         </div>
@@ -130,6 +138,7 @@ const SelectContents = (props) => {
             size="medium"
             fullWidth
             sx={{ background: "#fa7b77" }}
+            onClick={handleReset}
           >
             Reset
           </Button>

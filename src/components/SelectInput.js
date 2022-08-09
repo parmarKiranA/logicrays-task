@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 
 const SelectInput = (props) => {
-  const { options, title, onChange } = props;
+  const { options, title, onChange, name } = props;
   return (
     <>
       <Typography
@@ -25,7 +25,10 @@ const SelectInput = (props) => {
           onChange={(e) => onChange(e)}
         >
           {options.map((item) => (
-            <option value={item}> {item} </option>
+            <option value={item} name={name}>
+              {" "}
+              {item}{" "}
+            </option>
           ))}
         </select>
       </div>

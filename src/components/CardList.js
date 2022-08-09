@@ -65,7 +65,7 @@ const CardList = (props) => {
                 <Grid item>
                   <ButtonBase sx={{ width: 200, height: 130 }}>
                     {/* <Img alt="complex" src="/static/images/grid/complex.jpg" /> */}
-                    {/* <iframe
+                    <iframe
                       src={`https://www.youtube.com/embed/${youtubeLink}`}
                       frameborder="1"
                       allow="autoplay; encrypted-media"
@@ -73,7 +73,7 @@ const CardList = (props) => {
                       title="video"
                       width={"210"}
                       height={"130"}
-                    /> */}
+                    />
                   </ButtonBase>
                 </Grid>
                 <Grid item xs={12} sm container>

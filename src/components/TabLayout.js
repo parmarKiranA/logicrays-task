@@ -17,7 +17,7 @@ const useStyles = createStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    width: "250px",
+    width: "100%",
     float: "right",
     "& .MuiOutlinedInput-root": {
       background: "#fff",
@@ -97,7 +97,7 @@ const TabLayout = (props) => {
         sx={{
           bgcolor: "background.paper",
           width: "100%",
-          height: "620px",
+          height: "680px",
           margin: 5,
           marginLeft: 0,
           overflow: "scroll",
